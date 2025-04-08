@@ -70,7 +70,6 @@ var _ = Describe("Check Default values", Label("defaults"), Serial, func() {
 			DisableMDevConfiguration:    ptr.To(false),
 			PersistentReservation:       ptr.To(false),
 			AlignCPUs:                   ptr.To(false),
-			EnableApplicationAwareQuota: ptr.To(false),
 		}
 
 		DescribeTable("Check that featureGates defaults are behaving as expected", func(ctx context.Context, path string) {
